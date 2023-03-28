@@ -1,0 +1,90 @@
+﻿Rk,Tm,Year,Date▲,Time,LTime,,Opp,Week,G#,Day,Result,OT,Spread,vs. Line,Over/Under,OU Result
+1,PIT,2007,1/5/08,8:13,8:13,,JAX,18,17,Sat,L 29-31,,2.5,covered,40,over
+2,WAS,2007,1/5/08,4:35,1:35,@,SEA,18,17,Sat,L 14-35,,3.5,not covered,38.5,over
+3,NYG,2007,1/6/08,1:03,1:03,@,TAM,18,17,Sun,W 24-14,,3,covered,39.5,under
+4,TEN,2007,1/6/08,4:30,1:30,@,SDG,18,17,Sun,L 6-17,,10,not covered,39,under
+5,GNB,2007,1/12/08,4:33,3:33,,SEA,19,17,Sat,W 42-20,,-7.5,covered,44,over
+6,JAX,2007,1/12/08,8:15,8:15,@,NWE,19,18,Sat,L 20-31,,13.5,covered,51.5,under
+7,IND,2007,1/13/08,1:06,1:06,,SDG,19,17,Sun,L 24-28,,-11,not covered,47,over
+8,NYG,2007,1/13/08,4:45,3:45,@,DAL,19,18,Sun,W 21-17,,7,covered,47.5,under
+9,GNB,2007,1/20/08,6:42,5:42,,NYG,20,18,Sun,L 20-23,OT,-7.5,not covered,41.5,over
+10,SDG,2007,1/20/08,3:05,3:05,@,NWE,20,19,Sun,L 12-21,,14,covered,48,under
+11,NYG,2007,2/3/08,6:30,4:30,N,NWE,21,20,Sun,W 17-14,,12.5,covered,54.5,under
+12,ARI,2008,1/3/09,4:36,2:36,,ATL,18,17,Sat,W 30-24,,-2,covered,52,over
+13,SDG,2008,1/3/09,8:08,5:08,,IND,18,17,Sat,W 23-17,OT,2.5,covered,50,under
+14,MIN,2008,1/4/09,4:40,3:40,,PHI,18,17,Sun,L 14-26,,3.5,not covered,41,under
+15,MIA,2008,1/4/09,1:03,1:03,,BAL,18,17,Sun,L 9-27,,3.5,not covered,38,under
+16,CAR,2008,1/10/09,8:16,8:16,,ARI,19,17,Sat,L 13-33,,-10,not covered,49.5,under
+17,TEN,2008,1/10/09,4:33,3:33,,BAL,19,17,Sat,L 10-13,,-3,not covered,33.5,under
+18,PIT,2008,1/11/09,4:45,4:45,,SDG,19,17,Sun,W 35-24,,-6.5,covered,38.5,over
+19,NYG,2008,1/11/09,1:06,1:06,,PHI,19,17,Sun,L 11-23,,-4,not covered,39,under
+20,ARI,2008,1/18/09,4:06,1:06,,PHI,20,19,Sun,W 32-25,,3.5,covered,47,over
+21,BAL,2008,1/18/09,6:43,6:43,@,PIT,20,19,Sun,L 14-23,,6,not covered,35.5,over
+22,ARI,2008,2/1/09,6:31,6:31,N,PIT,21,20,Sun,L 23-27,,6.5,covered,46.5,over
+23,DAL,2009,1/9/10,8:05,7:05,,PHI,18,17,Sat,W 34-14,,-3.5,covered,46,over
+24,CIN,2009,1/9/10,4:36,4:36,,NYJ,18,17,Sat,L 14-24,,-2.5,not covered,34.5,over
+25,NWE,2009,1/10/10,1:03,1:03,,BAL,18,17,Sun,L 14-33,,-4,not covered,44,over
+26,GNB,2009,1/10/10,4:30,2:30,@,ARI,18,17,Sun,L 45-51,OT,-2.5,not covered,48,over
+27,IND,2009,1/16/10,8:15,8:15,,BAL,19,17,Sat,W 20-3,,-6.5,covered,44,under
+28,ARI,2009,1/16/10,4:34,3:34,@,NOR,19,18,Sat,L 14-45,,7,not covered,57,over
+29,DAL,2009,1/17/10,1:05,12:05,@,MIN,19,18,Sun,L 3-34,,2.5,not covered,45,under
+30,NYJ,2009,1/17/10,4:40,1:40,@,SDG,19,18,Sun,W 17-14,,9,covered,42.5,under
+31,IND,2009,1/24/10,3:05,3:05,,NYJ,20,18,Sun,W 30-17,,-8.5,covered,40.5,over
+32,MIN,2009,1/24/10,6:45,5:45,@,NOR,20,18,Sun,L 28-31,OT,3.5,covered,54,over
+33,NOR,2009,2/7/10,6:31,6:31,N,IND,21,19,Sun,W 31-17,,4.5,covered,56.5,under
+34,NOR,2010,1/8/11,4:35,1:35,@,SEA,18,17,Sat,L 36-41,,-10,not covered,46,over
+35,IND,2010,1/8/11,8:15,8:15,,NYJ,18,17,Sat,L 16-17,,-2,not covered,44.5,under
+36,PHI,2010,1/9/11,4:40,4:40,,GNB,18,17,Sun,L 16-21,,-2.5,not covered,47,under
+37,KAN,2010,1/9/11,1:06,12:06,,BAL,18,17,Sun,L 7-30,,3,not covered,41,under
+38,PIT,2010,1/15/11,4:35,4:35,,BAL,19,17,Sat,W 31-24,,-3,covered,37,over
+39,GNB,2010,1/15/11,8:15,8:15,@,ATL,19,18,Sat,W 48-21,,1.5,covered,43.5,over
+40,NWE,2010,1/16/11,4:40,4:40,,NYJ,19,17,Sun,L 21-28,,-9.5,not covered,45,over
+41,SEA,2010,1/16/11,1:05,12:05,@,CHI,19,18,Sun,L 24-35,,10,not covered,43,over
+42,CHI,2010,1/23/11,3:05,2:05,,GNB,20,18,Sun,L 14-21,,3.5,not covered,42.5,under
+43,NYJ,2010,1/23/11,6:41,6:41,@,PIT,20,19,Sun,L 19-24,,4,not covered,38,over
+44,GNB,2010,2/6/11,6:34,5:34,N,PIT,21,20,Sun,W 31-25,,-3,covered,45,over
+45,CIN,2011,1/7/12,4:35,3:35,@,HOU,18,17,Sat,L 10-31,,4,not covered,38,over
+46,DET,2011,1/7/12,8:09,7:09,@,NOR,18,17,Sat,L 28-45,,10.5,not covered,60,over
+47,NYG,2011,1/8/12,1:06,1:06,,ATL,18,17,Sun,W 24-2,,-3,covered,48,under
+48,DEN,2011,1/8/12,4:40,2:40,,PIT,18,17,Sun,W 29-23,OT,7.5,covered,34,over
+49,SFO,2011,1/14/12,4:35,1:35,,NOR,19,17,Sat,W 36-32,,3.5,covered,47,over
+50,DEN,2011,1/14/12,8:15,8:15,@,NWE,19,18,Sat,L 10-45,,13.5,not covered,50,over
+51,BAL,2011,1/15/12,1:05,1:05,,HOU,19,17,Sun,W 20-13,,-8,not covered,37.5,under
+52,GNB,2011,1/15/12,4:40,3:40,,NYG,19,17,Sun,L 20-37,,-8,not covered,54.5,over
+53,NWE,2011,1/22/12,3:05,3:05,,BAL,20,18,Sun,W 23-20,,-7,not covered,50,under
+54,NYG,2011,1/22/12,6:41,3:41,@,SFO,20,19,Sun,W 20-17,OT,2,covered,41.5,under
+55,NWE,2011,2/5/12,6:30,6:30,N,NYG,21,19,Sun,L 17-21,,-3,not covered,53.5,under
+56,GNB,2012,1/5/13,8:09,7:09,,MIN,18,17,Sat,W 24-10,,-11,covered,44.5,under
+57,HOU,2012,1/5/13,4:35,3:35,,CIN,18,17,Sat,W 19-13,,-4,covered,42.5,under
+58,WAS,2012,1/6/13,4:40,4:40,,SEA,18,17,Sun,L 14-24,,3,not covered,45,under
+59,IND,2012,1/6/13,1:07,1:07,@,BAL,18,17,Sun,L 9-24,,7,not covered,47,under
+60,DEN,2012,1/12/13,4:36,2:36,,BAL,19,17,Sat,L 35-38,OT,-9,not covered,44.5,over
+61,SFO,2012,1/12/13,8:25,5:25,,GNB,19,17,Sat,W 45-31,,-3,covered,45.5,over
+62,ATL,2012,1/13/13,1:05,1:05,,SEA,19,17,Sun,W 30-28,,-3,not covered,47,over
+63,HOU,2012,1/13/13,4:40,4:40,@,NWE,19,18,Sun,L 28-41,,9.5,not covered,51,over
+64,SFO,2012,1/20/13,3:05,3:05,@,ATL,20,18,Sun,W 28-24,,-4.5,not covered,49,over
+65,BAL,2012,1/20/13,6:40,6:40,@,NWE,20,19,Sun,W 28-13,,7.5,covered,51.5,under
+66,BAL,2012,2/3/13,6:31,5:31,N,SFO,21,20,Sun,W 34-31,,4.5,covered,48,over
+67,PHI,2013,1/4/14,8:14,8:14,,NOR,18,17,Sat,L 24-26,,-3,not covered,54.5,under
+68,KAN,2013,1/4/14,4:35,4:35,@,IND,18,17,Sat,L 44-45,,-2.5,not covered,48,over
+69,CIN,2013,1/5/14,1:06,1:06,,SDG,18,17,Sun,L 10-27,,-6,not covered,47.5,under
+70,SFO,2013,1/5/14,4:40,3:40,@,GNB,18,17,Sun,W 23-20,,-3,push,46.5,under
+71,SEA,2013,1/11/14,4:36,1:36,,NOR,19,17,Sat,W 23-15,,-9,not covered,44,under
+72,IND,2013,1/11/14,8:15,8:15,@,NWE,19,18,Sat,L 22-43,,7,not covered,51,over
+73,DEN,2013,1/12/14,4:40,2:40,,SDG,19,17,Sun,W 24-17,,-7.5,not covered,55,under
+74,CAR,2013,1/12/14,1:05,1:05,,SFO,19,17,Sun,L 10-23,,1,not covered,41,under
+75,DEN,2013,1/19/14,3:06,1:06,,NWE,20,18,Sun,W 26-16,,-5,covered,56.5,under
+76,SFO,2013,1/19/14,6:42,3:42,@,SEA,20,19,Sun,L 17-23,,4,not covered,40.5,under
+77,SEA,2013,2/2/14,6:32,6:32,N,DEN,21,19,Sun,W 43-8,,2.5,covered,47.5,over
+78,PIT,2014,1/3/15,8:15,8:15,,BAL,18,17,Sat,L 17-30,,-3,not covered,45,over
+79,ARI,2014,1/3/15,4:20,4:20,@,CAR,18,17,Sat,L 16-27,,6.5,not covered,37.5,over
+80,DAL,2014,1/4/15,4:41,3:41,,DET,18,17,Sun,W 24-20,,-6.5,not covered,48.5,under
+81,IND,2014,1/4/15,1:05,1:05,,CIN,18,17,Sun,W 26-10,,-3,covered,48,under
+82,NWE,2014,1/10/15,4:35,4:35,,BAL,19,17,Sat,W 35-31,,-7,not covered,47.5,over
+83,CAR,2014,1/10/15,8:21,5:21,@,SEA,19,18,Sat,L 17-31,,11.5,not covered,39.5,over
+84,DEN,2014,1/11/15,4:40,2:40,,IND,19,17,Sun,L 13-24,,-7,not covered,53.5,under
+85,DAL,2014,1/11/15,1:05,12:05,@,GNB,19,18,Sun,L 21-26,,6,covered,51.5,under
+86,SEA,2014,1/18/15,3:06,12:06,,GNB,20,18,Sun,W 28-22,OT,-8.5,not covered,45,over
+87,NWE,2014,1/18/15,6:50,6:50,,IND,20,18,Sun,W 45-7,,-7,covered,52,push
+88,SEA,2014,2/1/15,6:30,4:30,N,NWE,21,19,Sun,L 24-28,,0,not covered,47,over
+,,,,,,,,,,,,,,,,

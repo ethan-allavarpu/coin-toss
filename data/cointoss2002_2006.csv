@@ -1,0 +1,57 @@
+﻿Rk,Tm,Year,Date,Time,LTime,,Opp,Week,G#,Day,Result,OT,Spread,vs. Line,Over/Under,OU Result
+1,NYJ,2004,1/15/05,4:36,4:36,@,PIT,19,18,Sat,L 17-20,OT,9,covered,35.5,over
+2,PIT,2005,1/15/06,1:04,1:04,@,IND,19,18,Sun,W 21-18,,8.5,covered,46.5,under
+3,CLE,2002,1/5/03,1:01,1:01,@,PIT,18,17,Sun,L 33-36,,8,covered,43,over
+4,MIN,2004,1/16/05,1:06,1:06,@,PHI,19,18,Sun,L 14-27,,8,not covered,47,under
+5,ATL,2002,1/11/03,8:21,8:21,@,PHI,19,18,Sat,L 6-20,,7.5,not covered,38.5,under
+6,SEA,2003,1/4/04,1:04,12:04,@,GNB,18,17,Sun,L 27-33,OT,7.5,covered,43.5,over
+7,CAR,2003,1/10/04,4:30,3:30,@,STL,19,18,Sat,W 29-23,OT,7,covered,46,over
+8,CAR,2003,2/1/04,6:25,5:25,N,NWE,21,20,Sun,L 29-32,,7,covered,38,over
+9,PHI,2004,2/6/05,6:38,6:38,N,NWE,21,19,Sun,L 21-24,,7,covered,47,under
+10,ATL,2002,1/4/03,8:08,7:08,@,GNB,18,17,Sat,W 27-7,,6.5,covered,40.5,under
+11,CHI,2006,2/4/07,6:27,6:27,N,IND,21,19,Sun,L 17-29,,6.5,not covered,47,under
+12,KAN,2006,1/6/07,4:35,4:35,@,IND,18,17,Sat,L 8-23,,6.5,not covered,51,under
+13,ATL,2004,1/23/05,3:08,3:08,@,PHI,20,18,Sun,L 10-27,,6,not covered,37,push
+14,IND,2002,1/4/03,4:39,4:39,@,NYJ,18,17,Sat,L 0-41,,6,not covered,42,under
+15,MIN,2004,1/9/05,4:39,3:39,@,GNB,18,17,Sun,W 31-17,,6,covered,52.5,under
+16,NYG,2006,1/7/07,4:39,4:39,@,PHI,18,17,Sun,L 20-23,,6,covered,46.5,under
+17,TEN,2003,1/10/04,8:15,8:15,@,NWE,19,18,Sat,L 14-17,,6,covered,34,under
+18,CAR,2005,1/22/06,6:47,3:47,@,SEA,20,19,Sun,L 14-34,,5.5,not covered,43,over
+19,NYJ,2002,1/12/03,4:45,1:45,@,OAK,19,18,Sun,L 10-30,,5.5,not covered,47,under
+20,CAR,2003,1/18/04,6:50,6:50,@,PHI,20,19,Sun,W 14-3,,4,covered,36.5,under
+21,STL,2004,1/8/05,4:37,1:37,@,SEA,18,17,Sat,W 27-20,,4,covered,51,under
+22,SEA,2005,2/5/06,6:27,6:27,N,PIT,21,19,Sun,L 10-21,,4,not covered,47,under
+23,TAM,2002,1/26/03,6:26,3:26,N,OAK,20,19,Sun,W 48-21,,3.5,covered,44,over
+24,CAR,2005,1/8/06,1:04,1:04,@,NYG,18,17,Sun,W 23-0,,3,covered,43.5,under
+25,CAR,2005,1/15/06,4:41,3:41,@,CHI,19,18,Sun,W 29-21,,3,covered,31,over
+26,IND,2003,1/11/04,1:00,12:00,@,KAN,19,18,Sun,W 38-31,,3,covered,53,over
+27,DAL,2003,1/3/04,8:09,8:09,@,CAR,18,17,Sat,L 10-29,,3,not covered,34,over
+28,NOR,2006,1/21/07,3:06,2:06,@,CHI,20,18,Sun,L 14-39,,3,not covered,43,over
+29,NWE,2005,1/14/06,8:16,6:16,@,DEN,19,18,Sat,L 13-27,,3,not covered,44,under
+30,NWE,2006,1/21/07,6:44,6:44,@,IND,20,19,Sun,L 34-38,,3,not covered,47,over
+31,NYG,2002,1/5/03,4:47,1:47,@,SFO,18,17,Sun,L 38-39,,3,covered,41,over
+32,PIT,2004,1/23/05,6:36,6:36,,NWE,20,18,Sun,L 27-41,,3,not covered,36.5,over
+33,IND,2004,1/16/05,4:45,4:45,@,NWE,19,18,Sun,L 3-20,,1,not covered,51,under
+34,BAL,2003,1/3/04,4:37,4:37,,TEN,18,17,Sat,L 17-20,,1,not covered,38,under
+35,SEA,2006,1/6/07,8:09,5:09,,DAL,18,17,Sat,W 21-20,,-2,not covered,48.5,under
+36,TAM,2005,1/7/06,4:34,4:34,,WAS,18,17,Sat,L 10-17,,-2.5,not covered,37.5,under
+37,IND,2003,1/4/04,4:42,4:42,,DEN,18,17,Sun,W 41-10,,-3,covered,49,over
+38,PIT,2005,1/8/06,4:36,4:36,@,CIN,18,17,Sun,W 31-17,,-3,covered,44,over
+39,DEN,2005,1/22/06,3:08,1:08,,PIT,20,18,Sun,L 17-34,,-3.5,not covered,41,over
+40,NWE,2003,1/18/04,3:06,3:06,,IND,20,18,Sun,W 24-14,,-3.5,covered,42,under
+41,PHI,2002,1/19/03,3:08,3:08,,TAM,20,18,Sun,L 10-27,,-4,not covered,33.5,over
+42,PHI,2003,1/11/04,4:46,4:46,,GNB,19,17,Sun,W 20-17,OT,-4,not covered,43,under
+43,BAL,2006,1/13/07,4:35,4:35,,IND,19,17,Sat,L 6-15,,-4,not covered,41,under
+44,NOR,2006,1/13/07,8:11,7:11,,PHI,19,17,Sat,W 27-24,,-4.5,not covered,48.5,over
+45,TEN,2002,1/11/03,4:36,3:36,,PIT,19,17,Sat,W 34-31,OT,-4.5,not covered,44,over
+46,SDG,2006,1/14/07,4:40,1:40,,NWE,19,17,Sun,L 21-24,,-5,not covered,46.5,under
+47,TAM,2002,1/12/03,1:01,1:01,,SFO,19,17,Sun,W 31-6,,-6,covered,39.5,under
+48,ATL,2004,1/15/05,8:22,8:22,,STL,19,17,Sat,W 47-17,,-6.5,covered,49,over
+49,SDG,2004,1/8/05,8:14,5:14,,NYJ,18,17,Sat,L 17-20,OT,-6.5,not covered,42.5,under
+50,NWE,2005,1/7/06,8:08,8:08,,JAX,18,17,Sat,W 28-3,,-8,covered,37.5,under
+51,CHI,2006,1/14/07,1:06,12:06,,SEA,19,17,Sun,W 27-24,OT,-8.5,not covered,37.5,over
+52,SEA,2005,1/14/06,4:35,1:35,,WAS,19,17,Sat,W 20-10,,-8.5,covered,41,under
+53,NWE,2006,1/7/07,1:05,1:05,,NYJ,18,17,Sun,W 37-16,,-9,covered,38.5,over
+54,OAK,2002,1/19/03,6:47,3:47,,TEN,20,18,Sun,W 41-24,,-9,covered,46,over
+55,IND,2004,1/9/05,1:07,1:07,,DEN,18,17,Sun,W 49-24,,-10,covered,56,over
+,,,,,,,,,,,,,,,,

@@ -1,0 +1,298 @@
+# Gather and Clean Data -->
+## Function for Sorting Games by Date -->
+
+ordered_dates <- function(date_list) {
+  for (i in 1:2) {
+    if (nchar(date_list[i]) < 2) {
+      date_list[i] <- paste(0, date_list[i],
+                            sep = "",
+                            collapse = "")
+    }
+  }
+  order_date <- paste(date_list[3], date_list[1], date_list[2],
+                      sep = "",
+                      collapse = "")
+  as.numeric(order_date)
+}
+
+## Create .csv Files for Exportation -->
+### 2015 - 2019 -->
+
+cointoss20152019 <- read.csv("../data/cointoss2015_2019.csv", header = TRUE, stringsAsFactors = TRUE)
+names(cointoss20152019)[2] <- "Team Won Toss"
+cointoss20152019 <- cointoss20152019[-1][-2][-3][-3][-3][-4][-4][-4][-5][1:5]
+cointoss20152019 <- cointoss20152019[1:54, ]
+results <- as.character(cointoss20152019$Result)
+results <- substring(results, 1, 1)
+results <- factor(results)
+cointoss20152019$Result <- results
+dates <- as.character(cointoss20152019$Date)
+dates_list <- strsplit(dates, "/")
+dates_list <- lapply(dates_list, as.numeric)
+date_order <- vapply(dates_list, ordered_dates, numeric(1))
+names(date_order) <- 1:54
+date_sorted <- sort(date_order)
+cointoss20152019 <- cointoss20152019[names(date_sorted),]
+# write.csv(cointoss20152019, "../data/20152019cointoss.csv")
+
+### 2002 - 2006 -->
+
+cointoss20022006 <- read.csv("../data/cointoss2002_2006.csv", header = TRUE, stringsAsFactors = TRUE)
+names(cointoss20022006)[2] <- "Team Won Toss"
+cointoss20022006 <- cointoss20022006[-1][-2][-3][-3][-3][-4][-4][-4][-5][1:5]
+cointoss20022006 <- cointoss20022006[1:55, ]
+results <- as.character(cointoss20022006$Result)
+results <- substring(results, 1, 1)
+results <- factor(results)
+cointoss20022006$Result <- results
+dates <- as.character(cointoss20022006$Date)
+dates_list <- strsplit(dates, "/")
+dates_list <- lapply(dates_list, as.numeric)
+date_order <- vapply(dates_list, ordered_dates, numeric(1))
+names(date_order) <- 1:55
+date_sorted <- sort(date_order)
+cointoss20022006 <- cointoss20022006[names(date_sorted),]
+# write.csv(cointoss20022006, "../data/20022006cointoss.csv")
+
+### 2007 - 2014 -->
+
+cointoss20072014 <- read.csv("../data/cointoss2007_2014.csv", header = TRUE, stringsAsFactors = TRUE)
+names(cointoss20072014)[2] <- "Team Won Toss"
+cointoss20072014 <- cointoss20072014[1:88, ]
+cointoss20072014 <- cointoss20072014[-1][-2][-3][-3][-3][-4][-4][-4][-5][1:5]
+results <- as.character(cointoss20072014$Result)
+results <- substring(results, 1, 1)
+results <- factor(results)
+cointoss20072014$Result <- results
+# write.csv(cointoss20072014, "../data/20072014cointoss.csv")
+
+# Redownloading the Data
+# *Notes:*  
+#   
+# 1. Spread is given for the team that won the toss. A positive spread indicates an underdog, a negative spread indicates a favorite.  
+# 2. For coin toss choice, "R" means that the team chose to receive, while "D" means that the team chose to defer.
+
+## 2015 - 2019
+cointoss20152019 <- read.csv("../data/20152019cointoss.csv", header = TRUE, row.names = 1, stringsAsFactors = TRUE)
+cointoss20152019 <- cbind(cointoss20152019, "Year" = rep(2015:2019, each = 11))
+knitr::kable(cointoss20152019, align = "c", row.names = FALSE)
+
+## 2002 - 2006
+cointoss20022006 <- read.csv("../data/20022006cointoss.csv", header = TRUE, row.names = 1, stringsAsFactors = TRUE)
+cointoss20022006 <- cointoss20022006[, 1:6]
+cointoss20022006 <- cbind(cointoss20022006, "Year" = rep(2002:2006, each = 11))
+knitr::kable(cointoss20022006, align = "c", row.names = FALSE)
+
+cointoss20072014 <- read.csv("../data/20072014cointoss.csv", header = TRUE, stringsAsFactors = TRUE)
+cointoss20072014 <- cointoss20072014[seq(from = 2,
+                                         to = nrow(cointoss20072014),
+                                         by = 2), -1]
+cointoss20072014 <- cbind(cointoss20072014, "Year" = rep(2007:2014, each = 11))
+names(cointoss20072014) <- names(cointoss20152019)
+knitr::kable(cointoss20072014, align = "c")
+
+
+# Data Analysis
+## Is there a difference in deferral percentage across eras?  
+# $H_0$: $p_1 = p_2$  
+# $H_a$: $p_1 < p_2$  
+#   
+#   $p_1$: Deferral percentage for 2002 - 2006  
+#   $p_2$: Deferral percentage for 2015 - 2019  
+
+X1 <- sum(cointoss20022006$Coin.Toss.Choice == "D")
+X2 <- sum(cointoss20152019$Coin.Toss.Choice == "D")
+p1 <- mean(cointoss20022006$Coin.Toss.Choice == "D")
+p2 <- mean(cointoss20152019$Coin.Toss.Choice == "D")
+barplot(c("2002 - 2006" = p1, "2015 - 2019" = p2),
+        main = "Percent of Coin Tosses with Deferral Result",
+        xlab = "Year Span",
+        ylab = "Percent Deferrals",
+        col = c("red", "blue"),
+        density = 100 * c(p1, p2),
+        las = 1)
+text(0.7, p1 + 0.05, labels = round(p1, 3))
+text(1.9, p2 - 0.05, labels = round(p2, 3), col = "white")
+def_prop <- prop.test(c(X1, X2),
+                      c(nrow(cointoss20022006), nrow(cointoss20152019)),
+                      alternative = "less",
+                      correct = FALSE)
+def_prop
+p_val <- def_prop$p.value
+p_val
+
+# Since $p < \alpha$, we reject $H_0$. We do have evidence which supports the
+# alternative hypothesis $H_a$ that the deferral percentage for winners of the
+# coin toss is less for the years 2002 - 2006 than for the years 2015 - 2019.  
+
+## Does deferring provide a statistically significant advantage in win percentage?
+# $H_0$: $p_1 = p_2$  
+# $H_a$: $p_1 \neq p_2$  
+#   
+# $p_1$: Win percentage for deferring
+# $p_2$: Win percentage for receiving
+
+cointoss <- rbind(cointoss20022006, cointoss20072014, cointoss20152019)
+defer <- cointoss[cointoss$Coin.Toss.Choice == "D", ]
+receive <- cointoss[cointoss$Coin.Toss.Choice == "R", ]
+defer_wins <- sum(defer$Result == "W")
+receive_wins <- sum(receive$Result == "W")
+defer_win_pct <- mean(defer$Result == "W")
+receive_win_pct <- mean(receive$Result == "W")
+barplot(c("Defer" = defer_win_pct, "Receive" = receive_win_pct),
+        main = "Win Percentage by Coin Toss Decision",
+        xlab = "Coin Toss Decision",
+        ylim = c(0, 0.6),
+        ylab = "Win Percentage",
+        col = c("red", "blue"),
+        density = 100 * c(defer_win_pct, receive_win_pct),
+        las = 1)
+text(0.7, defer_win_pct + 0.05,
+     labels = paste(round(defer_win_pct, 3), " (",
+                    defer_wins, " instances)", sep = ""))
+text(1.9, receive_win_pct + 0.05,
+     labels = paste(round(receive_win_pct, 3), " (",
+                    receive_wins, " instances)", sep = ""))
+win_prop <- prop.test(c(defer_wins, receive_wins),
+                      c(nrow(defer), nrow(receive)),
+                      correct = FALSE)
+win_prop
+p_val <- win_prop$p.value
+p_val
+
+ctwin <- mean(cointoss$Result == "W")
+ctlose <- 1 - ctwin
+barplot(c("Won Coin Toss" = ctwin, "Lost Coin Toss" = ctlose),
+        main = "Win Percentage for Teams Winning or Losing the Coin Toss",
+        xlab = "Won Coin Toss?",
+        ylim = c(0, 0.7),
+        ylab = "Win Percentage",
+        col = c("red", "blue"),
+        density = 100 * c(ctwin, ctlose),
+        las = 1)
+text(0.7, ctwin + 0.05,
+     labels = round(ctwin, 3))
+text(1.9, ctlose + 0.05,
+     labels = round(ctlose, 3))
+
+
+# Data Visualization
+## Line Plots
+receive_pct <- tapply(as.numeric(cointoss$Coin.Toss.Choice),
+                      cointoss$Year,
+                      mean) - 1
+defer_pct <- 1 - receive_pct
+plot(unique(cointoss$Year), defer_pct, col = "blue", pch = 17,
+     cex = 0.75, ylim = c(0, 1),
+     type = "o",
+     ylab = "Percent",
+     xlab = "Year",
+     main = "Deferral Percentage and\nWin Percentage for Teams that Deferred")
+defers <- cointoss[cointoss$Coin.Toss.Choice == "D", ]
+defer_win_pct_year <- tapply(as.numeric(defers$Result),
+                             defers$Year,
+                             mean) - 1
+lines(unique(defers$Year), defer_win_pct_year, col = "red",
+      lty = 2, type = "o", pch = 19,
+      cex = 0.75)
+year <- unique(cointoss$Year)
+abline(h = 0.5, col = "black", lty = 2)
+legend("left",
+       legend = c("Defer Win Percentage",
+                  "Defer Percentage"),
+       pch = 19,
+       cex = 0.75,
+       col = c("red", "blue"),
+       inset = 0.05)
+
+plot(unique(cointoss$Year), receive_pct, col = "blue", pch = 17,
+     cex = 0.75, ylim = c(0, 1),
+     type = "o",
+     ylab = "Percent",
+     xlab = "Year",
+     main = "Receive Percentage and\nWin Percentage for Teams that Received")
+receives <- cointoss[cointoss$Coin.Toss.Choice == "R", ]
+rec_win_pct_year <- tapply(as.numeric(receives$Result),
+                           receives$Year,
+                           mean) - 1
+lines(unique(receives$Year), rec_win_pct_year, col = "red",
+      lty = 2, type = "o", pch = 19,
+      cex = 0.75)
+abline(h = 0.5, col = "black", lty = 2)
+legend("bottomleft",
+       legend = c("Receive Win Percentage",
+                  "Receive Percentage"),
+       pch = 19,
+       cex = 0.75,
+       col = c("red", "blue"),
+       inset = 0.05)
+
+## Deferrals by Round
+colors <- c("coral1",
+            "darkorchid3",
+            "deepskyblue",
+            "khaki")
+cointoss$Round <- factor(c(rep(c(rep(c("1. W", "2. D"), each = 4),
+                                 "3. C", "3. C", "4. SB"), 18)),ordered = TRUE)
+round_receive_pct <- tapply(as.numeric(cointoss$Coin.Toss.Choice),
+                            list(cointoss$Year, cointoss$Round),
+                            mean) - 1
+round_defer_pct <- 1 - round_receive_pct
+barplot(t(round_defer_pct), beside = TRUE, col = colors, las = 1,
+        main = "Deferral Percentage by Year and Round",
+        xlab = "Year",
+        ylab = "Deferral Percentage")
+legend("topleft",
+       title = "Round",
+       legend = c("Wild Card",
+                  "Divisional ",
+                  "Conference Championship",
+                  "Super Bowl"),
+       col = colors,
+       lty = 1,
+       lwd = 1,
+       cex = 0.5,
+       inset = 0.05)
+
+par(mfrow = c(2,2))
+rounds <- c("Wild Card", "Divisional",
+            "Conference Championship", "Super Bowl")
+for (i in 1:4) {
+  barplot(round_defer_pct[, i], col = colors[i], las = 1,
+          main = rounds[i],
+          xlab = "Year",
+          ylab = "Deferral Percentage")
+}
+
+rounds_receive_pct <- tapply(as.numeric(cointoss$Coin.Toss.Choice),
+                             cointoss$Round,
+                             mean) - 1
+rounds_defer_pct <- 1 - rounds_receive_pct
+names(rounds_defer_pct) <- c("Wild Card", "Divisional", "Championship",
+                             "Super Bowl")
+barplot(rounds_defer_pct, col = colors, ylab = "Deferral Percentage",
+        las = 1, main = "Deferral Percentage by Round")
+
+## Four Sample Test for Equality of Proportions (Chi-Square GoF)
+rounds_defer_number <- c(rounds_defer_pct[1:2] * 4,
+                         rounds_defer_pct[3] * 2,
+                         rounds_defer_pct[4])
+rounds_defer_number <- 18 * rounds_defer_number
+prop.test(rounds_defer_number, 18 * c(4, 4, 2, 1))
+
+## Chi Square Test for Independence
+# Test if the proportion of deferrals in each round remains the same over all years
+defers <- defer_pct * 11
+defers <- defers[defers > 0]
+prop.test(defer_win_pct_year * defers, defers)
+
+## Relationship between Defer Percentage and Win Percentage
+defer_pct
+defer_win_pct_year
+defer_win_pct_year <- c(defer_win_pct_year[1:3], 0, 0, defer_win_pct_year[4:length(defer_win_pct_year)])
+defer_win_pct_year
+plot(defer_win_pct_year ~ defer_pct,
+     pch = 19,
+     col = rgb(0, 0, 0, alpha = 0.25))
+win_to_defer <- lm(defer_win_pct_year ~ defer_pct)
+summary(win_to_defer)
